@@ -9,36 +9,3 @@
     </form>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      username: "",
-      useremail: "",
-      usermessage: ""
-    };
-  },
-  methods: {
-    greetUser() {
-      alert(`Hello ${this.username}, your message has been sent successfully!`);
-    }
-  }
-};
-</script>
-
-<style scoped>
-.contact-form {
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-</style>
