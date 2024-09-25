@@ -13,3 +13,10 @@ export default {
   }
 };
 </script>
+<style scoped>
+.about-us {
+  padding: 30px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+</style>
