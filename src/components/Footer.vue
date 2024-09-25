@@ -11,3 +11,13 @@
     </nav>
   </footer>
 </template>
+<script>
+export default {
+  name: "AppFooter", // Register the component name as AppFooter
+  data() {
+    return {
+      currentYear: new Date().getFullYear(), // Get the current year
+    };
+  },
+};
+</script>
