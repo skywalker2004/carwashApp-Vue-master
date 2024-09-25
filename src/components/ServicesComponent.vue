@@ -24,3 +24,19 @@ export default {
   }
 };
 </script>
+<style scoped>
+/* Services section background and padding */
+.services-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center; /* Center-align the text */
+}
+
+/* Style for each service block */
+.service {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px; /* Rounded corners */
+}
+</style>
