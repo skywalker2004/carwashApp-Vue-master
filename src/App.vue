@@ -67,4 +67,57 @@ export default {
   }
 };
 </script>
+<style scoped>
+/* Header section styles */
+.headersection {
+  background-color: #4285f4; /* Blue background */
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('./assets/images/carwash1.jpg'); /* Background image */
+  background-size: cover;
+  color: white;
+  padding: 50px;
+}
+
+.hero h2 {
+  font-size: 30px; /* Main text size in the hero section */
+}
+
+.hero button {
+  background-color: chartreuse; /* Button color */
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Section spacing */
+section {
+  margin: 50px 0;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #2c3e50; /* Dark blue background on hover */
+  color: white;
+}
+</style>
 
