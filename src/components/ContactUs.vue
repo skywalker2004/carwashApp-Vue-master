@@ -9,3 +9,19 @@
     </form>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      username: "",
+      useremail: "",
+      usermessage: ""
+    };
+  },
+  methods: {
+    greetUser() {
+      alert(`Hello ${this.username}, your message has been sent successfully!`);
+    }
+  }
+};
+</script>
