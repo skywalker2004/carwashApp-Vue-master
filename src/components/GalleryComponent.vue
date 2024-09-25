@@ -13,3 +13,23 @@ export default {
   name: "GalleryComponent", // Register the component name
 };
 </script>
+<style scoped>
+/* Center the gallery content */
+.galleryComponent {
+  text-align: center; 
+}
+
+/* Arrange images horizontally with flexbox */
+.images {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Add space between the images */
+}
+
+/* Style individual images */
+.images img {
+  width: 300px; /* Set fixed width for each image */
+  border-radius: 10px; /* Rounded corners for the images */
+}
+</style>
+
