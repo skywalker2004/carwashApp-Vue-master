@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Header section starts -->
     <div class="headersection">
       <header>
         <h1>{{ heading }}</h1>
@@ -12,34 +11,60 @@
         </nav>
       </header>
 
-      <!-- Hero section with a button -->
       <div class="hero">
         <h2>{{ description }}</h2>
         <button @click="learnMore">Learn more</button>
       </div>
     </div>
 
-    <!-- Section for services -->
     <section id="services">
       <ServicesComponent />
     </section>
 
-    <!-- Section for About Us -->
     <section id="about">
       <AboutUs />
     </section>
 
-    <!-- Section for Gallery -->
     <section id="gallery">
       <GalleryComponent />
     </section>
 
-    <!-- Section for Contact Us -->
     <section id="contact">
       <ContactUs />
     </section>
 
-    <!-- Footer component -->
-    <Footer />
+    <Footer /> <!-- Include Footer component -->
   </div>
 </template>
+<script>
+import ServicesComponent from './components/ServicesComponent.vue';
+import ContactUs from './components/ContactUs.vue';
+import AboutUs from './components/AboutUs.vue';
+import GalleryComponent from './components/GalleryComponent.vue';
+import Footer from './components/Footer.vue'; // Import the Footer component
+
+export default {
+  name: "App",
+  components: {
+    ServicesComponent,
+    ContactUs,
+    AboutUs,
+    GalleryComponent,
+    Footer, // Register the Footer component
+  },
+  data() {
+    return {
+      heading: "Bonke Carwash Services", // Main heading of the site
+      description: "Premium Carwash Services at Affordable Prices", // Hero section description
+      companyName: "Bonke Carwash", // Company name used in alert
+      aboutus: "At Bonke Car Wash, we provide top-notch car cleaning and detailing services to keep your vehicle looking spotless and running at its best." 
+    };
+  },
+  methods: {
+    learnMore() {
+      alert(`Welcome to ${this.companyName}: ${this.aboutus}`); // Display an alert when the button is clicked
+    }
+  }
+};
+</script>
+
