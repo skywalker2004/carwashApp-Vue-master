@@ -8,3 +8,8 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: "GalleryComponent", // Register the component name
+};
+</script>
